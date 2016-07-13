@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Sweety">
+  <listeners>
+  	<listener class-name="codetheory.interview.sweety.ExecutionListenerApp" />
+  </listeners>
+  <test name="Report">
+  	<parameter name="Username" value="udayv1990@gmail.com"/>
+	<parameter name="Password" value="codetheoryio"/>
+    <classes>
+      <class name="codetheory.interview.sweety.Sweety_Sample_TestScript"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

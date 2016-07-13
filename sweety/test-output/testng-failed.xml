@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Sweety]">
+  <parameter name="Username" value="udayv1990@gmail.com"/>
+  <parameter name="Password" value="codetheoryio"/>
+  <listeners>
+    <listener class-name="codetheory.interview.sweety.ExecutionListenerApp"/>
+  </listeners>
+  <test name="Report">
+    <parameter name="Username" value="udayv1990@gmail.com"/>
+    <parameter name="Password" value="codetheoryio"/>
+    <classes>
+      <class name="codetheory.interview.sweety.Sweety_Sample_TestScript"/>
+    </classes>
+  </test> <!-- Report -->
+  <test name="Report(failed)">
+    <parameter name="Username" value="udayv1990@gmail.com"/>
+    <parameter name="Password" value="codetheoryio"/>
+    <classes>
+      <class name="codetheory.interview.sweety.Sweety_Sample_TestScript">
+        <methods>
+          <include name="VerifyMonthlyReportData"/>
+        </methods>
+      </class> <!-- codetheory.interview.sweety.Sweety_Sample_TestScript -->
+    </classes>
+  </test> <!-- Report(failed) -->
+</suite> <!-- Failed suite [Sweety] -->
